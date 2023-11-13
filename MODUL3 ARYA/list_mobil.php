@@ -29,7 +29,7 @@
 
 
             if ($result->num_rows > 0) {
-                echo '<table  class="text-center" width=50%>
+                echo '<table  class="text-center" width=100% border="1" cellpadding="4">
                         <thead>
                             <tr>
                                 <th>Nama Mobil</th>
@@ -48,7 +48,7 @@
                             <td>' . $row['warna_mobil'] . '</td>
                             <td>' . $row['tipe_mobil'] . '</td>
                             <td>' . $row['harga_mobil'] . '</td>
-                            <td><a class="btn btn-primary" href="form_detail_mobil.php"></a> </td>
+                            <td><a class="btn btn-primary" href="form_detail_mobil.php?id='.$row['id'].'">Lihat Detail</a></td>
                         </tr>';
                 }
 
